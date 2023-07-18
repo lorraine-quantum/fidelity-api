@@ -16,9 +16,12 @@ const mongoose = require('mongoose')
 const connect = require('connect-pg-simple')
 const session = require('express-session')
 const UserSchema = require('./models/UserModel')
-
+const origin = [
+  'https://admin.fidelitytrades.org',
+  'https://fidelitytrades.org'
+]
 app.use(cors({
-  origin: ['https://admin.fidelitytrades.org', 'https://fidelity-admin.vercel.app', 'https://fidelity-trades-beige.vercel.app', 'http://localhost:3000', 'http://localhost:5173', 'https://fidelitytrades.org']
+  origin
 }));
 
 app.use(morgan('dev'))
