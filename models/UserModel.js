@@ -50,6 +50,10 @@ const UserSchema = new mongoose.Schema({
     type: String,
     default: ''
   },
+  investmentGoal: {
+    type: String,
+    default: ''
+  },
   email: {
     type: String,
     required: [true, "email cannot be empty"],

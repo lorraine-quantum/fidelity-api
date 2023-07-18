@@ -93,6 +93,7 @@ const adminEditSingleUser = async (req, res) => {
         verified: req.body.verified,
         totalEquity: req.body.totalEquity,
         plan: req.body.plan,
+        investmentGoal: req.body.investmentGoal,
         totalDeposit: req.body.totalDeposit,
         userCanWithdraw: req.body.userCanWithdraw,
         withdrawalCharges: req.body.withdrawalCharges,
