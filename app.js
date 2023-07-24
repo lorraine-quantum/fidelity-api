@@ -17,8 +17,8 @@ const connect = require('connect-pg-simple')
 const session = require('express-session')
 const UserSchema = require('./models/UserModel')
 const origin = [
-  'https://admin.fidelitytrades.org',
-  'https://fidelitytrades.org'
+  'https://admin.tradetechcoin.com',
+  'https://tradetechcoin.com'
 ]
 app.use(cors({
   origin
