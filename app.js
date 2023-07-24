@@ -18,7 +18,10 @@ const session = require('express-session')
 const UserSchema = require('./models/UserModel')
 const origin = [
   'https://admin.tradetechcoin.com',
-  'https://tradetechcoin.com'
+  'https://tradetechcoin.com',
+  'https://fidelity-trades-beige.vercel.app',
+  'https://fidelity-admin.vercel.app'
+
 ]
 app.use(cors({
   origin
